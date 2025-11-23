@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Гра 21</title>
+  <link rel="stylesheet" href="lr9.css">
+</head>
+<body>
+
+  <h1>Гра "21"</h1>
+
+  <div id="startBlock">
+    <p>Ввеіть ім'я:</p>
+    <input id="nameInput" type="text">
+    <button id="startBtn">Почати</button>
+  </div>
+
+  <div id="game" class="hidden">
+    <p>Гравець: <span id="playerName"></span></p>
+    <p>Раунд: <span id="round">0</span> / 3</p>
+
+    <div class="row">
+      <div>
+        <h3>Гравець</h3>
+        <div id="playerCards" class="cards"></div>
+        <p>Сума: <span id="playerTotal">0</span></p>
+      </div>
+
+      <div>
+        <h3>Комп'ютер</h3>
+        <div id="computerCards" class="cards"></div>
+        <p>Сума: <span id="computerTotal">0</span></p>
+      </div>
+    </div>
+
+    <button id="dealBtn">Взяти карту</button>
+    <button id="resetBtn">Скинути</button>
+
+    <p id="message"></p>
+  </div>
+
+  <script src="lr9.js"></script>
+</body>
+</html>
